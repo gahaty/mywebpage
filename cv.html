@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/cv.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //fading in 500ms
+            $('body').fadeIn(500);
+            $('div.wrapper').fadeIn(500);
+            //get last position
+            if (sessionStorage.getItem("cv") != null) {
+                $(window).scrollTop(sessionStorage.getItem("cv"));
+            }
+            $(window).on("scroll", function() {
+                sessionStorage.setItem("cv", $(window).scrollTop());
+            });
+        });
+    </script>
+    <title>Tölcséres Gábor - Junior JAVA fejlesztő</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="left"><b>Tölcséres Gábor</b> / Junior JAVA fejlesztő</div>
+            <div class="right">
+                <a href="index.html">RÓLAM</a><span> | </span>
+                <a class="current">CV</a><span> | </span>
+                <a href="projects.html" target="_blank">PROJEKTEK</a><span> | </span>
+                <a href="natur.html" target="_blank">TERMÉSZET</a><span> | </span>
+                <a href="lighttech.html" target="_blank">FÉNYTECHNIKA</a>
+            </div>
+        </header>
+        <div class="content">
+            <nav>
+
+            </nav>
+            <main>
+                <div class="boxes">
+
+                    <div class="rightBox">
+                        <div class="CV">Önéletrajz</div>
+                        <button class="buttonDownload"><a href="cv/tolcseres_gabor_ff.pdf" target="_blank">CV
+                                Letöltés (Nyomtatóbarát)</a></button>
+                        <table>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="activity"><b>Tanulmányok</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2020 - 2021</td>
+                                <td colspan="2">
+                                    <div class="top"><b>CheckPoint-IT Education & Recruitment Center</b></div>
+                                    <div class="bottom">
+                                        <p>Junior JAVA fejlesztő</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2006 - 2009</td>
+                                <td colspan="2">
+                                    <div class="top"><b>Kecskeméti Főiskola</b></div>
+                                    <div class="bottom">
+                                        <p>Mérnök-informatikus (gazdasági informatikai szakirány)</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2003 - 2005</td>
+                                <td colspan="2">
+                                    <div class="top"><b>Katedra Alapítványi Szakközépiskola</b></div>
+                                    <div class="bottom">
+                                        <p>Gazdasági informatikus</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2001 - 2003</td>
+                                <td colspan="2">
+                                    <div class="top"><b>Gábor Dénes Műszaki Szakközépiskola</b></div>
+                                    <div class="bottom">
+                                        <p>Műszaki számítástechnikai technikus</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="activity"><b>Tapasztalat</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2015 - 2020</td>
+                                <td colspan="2">
+                                    <div class="top"><b>Hotel Seeland - Sankt Pölten</b></div>
+                                    <div class="bottom">
+                                        <p>Abwäscher</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2013 - 2014</td>
+                                <td colspan="2">
+                                    <div class="top"><b>Kulinarik & Genißerhotel Alpin - Achenkirch</b></div>
+                                    <div class="bottom">
+                                        <p>Abwäscher</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2010 - 2013</td>
+                                <td colspan="2">
+                                    <div class="top"><b>Sing Sing Music Hall</b></div>
+                                    <div class="bottom">
+                                        <p>Hang és fénytechnikus</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2005 - 2010</td>
+                                <td colspan="2">
+                                    <div class="top"><b>DigitCam - Digitáls Fotószaküzlet</b></div>
+                                    <div class="bottom">
+                                        <p>Üzletvezető - értékesítő</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">2003 - 2004</td>
+                                <td colspan="2">
+                                    <div class="top"><b>Cyber - Cafe internetkávézók</b></div>
+                                    <div class="bottom">
+                                        <p>Operátor</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="activity"><b>Nyelvismeret</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">Angol</td>
+                                <td colspan="2">
+                                    <div class="top">
+
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:40%">40%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">Német</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">60%</div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="activity"><b>Készségek</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">JAVA</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">80%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">JAVA_FX</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">60%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">mySQL</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">80%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">Spring Boot MVC</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">60%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">Thymeleaf</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">60%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">HTML5/CSS3</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">60%</div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="year">Maven</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">60%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="year">Git</td>
+                                <td colspan="2">
+                                    <div class="top">
+                                        <div class="w3-light-grey w3-round"></div>
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">80%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </main>
+            <aside>
+            </aside>
+        </div>
+        <footer>
+            <div class="left">© 2021 by Tölcséres Gábor</div>
+            <div class="right">
+                <a href=""><b>Telefon:</b> 20/566-1767 |</a>
+                <a href="mailto:gahaty@gmail.com"><b>E-mail:</b> gahaty@gmail.com |</a>
+                <a href="https://www.linkedin.com/in/tolcseres-gabor-076035161/" target="_blank"><b>LinkedIn</b> |</a>
+                <a href="https://github.com/gahaty?tab=repositories" target="_blank"><b>GitHub</b></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

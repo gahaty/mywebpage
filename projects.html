@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/projects.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //fading in 500ms
+            $('body').fadeIn(500);
+            $('div.wrapper').fadeIn(500);
+            //get last position
+            if (sessionStorage.getItem("projects") != null) {
+                $(window).scrollTop(sessionStorage.getItem("projects"));
+            }
+            $(window).on("scroll", function() {
+                sessionStorage.setItem("projects", $(window).scrollTop());
+            });
+        });
+    </script>
+    <title>Tölcséres Gábor - Junior JAVA fejlesztő</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="left"><b>Tölcséres Gábor</b> / Junior JAVA fejlesztő</div>
+            <div class="right">
+                <a href="index.html">RÓLAM</a><span> | </span>
+                <a href="cv.html" target="_blank">CV</a><span> | </span>
+                <a class="current" href="">PROJEKTEK</a><span> | </span>
+                <a href="natur.html" target="_blank">TERMÉSZET</a><span> | </span>
+                <a href="lighttech.html" target="_blank">FÉNYTECHNIKA</a>
+            </div>
+        </header>
+        <div class="content">
+            <nav>
+
+            </nav>
+            <main>
+                <div class="boxes">
+                    <div class="leftBox">
+                        <div class="circle1">
+                            <img src="pics/elevator.gif" alt="">
+                        </div>
+                        <p class="p3">-</p>
+                        <p class="p1">Lefelé gyűjtő felvonóvezérlő logika</p>
+
+                    </div>
+                    <div class="rightBox">
+                        <p class="p2"></p>
+                        <p class="p3">Ez a kisebb program egy 10 emeletes ház felvonó vezérlését szemlélteti. A logika bemutatja, hogy milyen sorrendben kerülnek kiszolgálásra a liftből és/vagy a hívótablóról az egy időben kapott parancsok. A személyek által megadott
+                            jelzés egy gyűjtőtárolóba (SET) kerül, majd az irányvizsgálatot követően további SET-ekbe szelektálódik. A továbbiakban a felvonó haladási iránya fogja meghatározni a külső illetve belső kérések kiszolgálási sorrendjét...
+                        </p>
+                        <button class="buttonProjects"><a href="https://github.com/gahaty/elevatorController"
+                                target="_blank">Megnézem</a></button>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="leftBox">
+                        <div class="circle2">
+                            <img src="pics/rent.gif" alt="">
+                        </div>
+                        <p class="p3">-</p>
+                        <p class="p1">Autó, -hajókölcsönző program</p>
+
+                    </div>
+                    <div class="rightBox">
+                        <p class="p2"></p>
+                        <p class="p3">Ez a kis alkalmazás a kölcsönző járművei nyilvántartására szolgál. Az első indításkor az adatok egy excel fájlban vannak, onnan kerülnek beolvasásra. A továbbiakban lehetőség van az összes jármű listázására, keresésre (rendszám,
+                            férőhely és évjárat), valamint új jármű felvételére is. A program leállításkor fájlba menti az adatokat, majd induláskor be is olvassa azokat, hogy ugyanonnan lehessen folytani a munkát...</p>
+                        <button class="buttonProjects"><a href="https://github.com/gahaty/CarRental"
+                                target="_blank">Megnézem</a></button>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="leftBox">
+                        <img src="pics/animals.gif" alt="">
+                        <p class="p3">-</p>
+                        <p class="p1">Kisállat nyilvántartó rendszer (KINYIR)</p>
+
+                    </div>
+                    <div class="rightBox">
+                        <p class="p2"></p>
+                        <p class="p3">A program egy valóságban használt nyilvántartási rendszer egyszerűsített változata, mely chip-pel ellátott kisállatok elektronikus rögzítésére szolgál. Program specifikáció: Kisállat felvitele meglévő gazdihoz / új gazdival, keresés
+                            gazdi vagy kisállat alapján, új oltás beadása / listázása. Az adatok exportálásának lehetősége CSV és XLSX fájlba.
+                        </p>
+                        <button class="buttonProjects"><a href="https://github.com/gahaty/JAVA2_RESZVIZSGA01"
+                                target="_blank">Megnézem</a></button>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="leftBox">
+                        <div class="circle4">
+                            <img src="pics/time.gif" alt="">
+                        </div>
+                        <p class="p3">-</p>
+                        <p class="p1">Klinikai időpontfoglaló alkalmazás (MiniKlinikTermin)</p>
+
+                    </div>
+                    <div class="rightBox">
+                        <p class="p2"></p>
+                        <p class="p3">A feladat egy valóságban is használt klinikai kezelésnyilvántartó szoftver egyszerűsített változatának az elkészítése volt. A rendszer a különböző kezelések személyi és technikai adatait kezeli. A rendszer JAVA nyelven készült
+                            és mySQL adatbázist használ. A programban szakrendelés típusok mellett kezelők, kezelés típusok kerülnek meghatározásra. Mindemellett orvosok / páciensek felvételére van lehetőség. A betegfelvétel időpont alapján történik,
+                            a rendelkezére álló orvosok és kezelők függvényében. A páciensnek 24 órán túl időpont lemondásra van lehetősége...
+                        </p>
+                        <button class="buttonProjects"><a href="https://github.com/gahaty/JAVA2_RESZVIZSGA02"
+                                target="_blank">Megnézem</a></button>
+                    </div>
+                </div>
+            </main>
+            <aside>
+
+            </aside>
+        </div>
+        <footer>
+            <div class="left">© 2021 by Tölcséres Gábor</div>
+            <div class="right">
+                <a href=""><b>Telefon:</b> 20/566-1767 |</a>
+                <a href="mailto:gahaty@gmail.com"><b>E-mail:</b> gahaty@gmail.com |</a>
+                <a href="https://www.linkedin.com/in/tolcseres-gabor-076035161/" target="_blank"><b>LinkedIn</b> |</a>
+                <a href="https://github.com/gahaty?tab=repositories" target="_blank"><b>GitHub</b></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
